@@ -4,3 +4,9 @@ export let variable = {
   thisLinkNow: String(window.location.href),
   url: `https://course-api.com/javascript-store-products`,
 };
+
+export let variableLoupe = {
+$htmlGenerateBreadCrumbs: document.getElementById('breadCrumbs'),
+$htmlGenerateTitle: document.getElementById('breadTitle'),
+$htmlGenerateCardItem: document.getElementById('cardItem'),
+}
