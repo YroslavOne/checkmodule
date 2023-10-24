@@ -35,6 +35,11 @@
     let positionStoregaLoupe = await import('./js/component/menu.js');
     positionStoregaLoupe.loupeOnClick(idLoupe);
   }
+  async function basketOpen(){
+	let openCard = await import("./js/component/card.js")
+	openCard.basketOpen();
+		
+	}
   async function toDoBasketOpen(productsFeatured){
 	let openCard = await import("./js/component/card.js")
 		
@@ -48,6 +53,23 @@
 	menu.checkingWhatColorMakesLogo(String(window.location.pathname));
 	closeCard.basketClose(); 
 	closeCard.checkLocalStorage();}
+	async function removeItemBasket(quantity){
+		let card = await import("./js/component/card.js")
+		card.removeItemBasket(quantity)
+		// card.sortThroughBasketProduct()
+
+	}
+	async function productPlus(quantity){
+		let card = await import("./js/component/card.js")
+		card.productPlus(quantity)
+		// card.sortThroughBasketProduct()
+
+	}
+	async function productMinus(quantity){
+		let card = await import("./js/component/card.js")
+		card.productMinus(quantity)
+		// card.sortThroughBasketProduct()
+	}
 </script>
 </body>
 </html>
