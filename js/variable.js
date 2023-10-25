@@ -16,3 +16,13 @@ export let variableCard = {
   quantityElemCard: 0,
   
 }
+export let product = {
+nameProduct: '',
+priceProduct: '',
+companyProduct: 'All',
+arrayCompanyProduct: ['All'],
+$htmlCompanyProduct: document.getElementById('all_company'),
+$valuePriseInputRange: document.getElementById('value_price_input'),
+$valuePriceInInput: document.getElementById('value_price_in_input'),
+arrayProduct: [],
+}
