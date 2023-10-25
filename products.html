@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home | comfy</title>
+</head>
+<body>
+	<div id="basket_open" class=""></div>
+<div class="menu_display_flex" id="menu">
+</div>
+<div class="breadCrumbs">
+<p id="breadCrumbs">Home / Products</p>
+</div>
+<div class="block_products_flex">
+<div class="block_products">
+	<div class="filter_sidbar">
+	<div class="sidebar">
+		<input type="text" id="text_input" placeholder="search...">
+		<div>
+		<h4 class="title_products">Company</h4>
+		<div class="all_company" id="all_company" >
+
+		</div>
+	</div>
+	<div>
+		<h4 class="title_products">Prise</h4>
+		
+		<div>
+			<input type="range" id="value_price_input" step="1">
+			<p class="value_price_input" id="value_price_in_input"></p>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="catalog_block" id="catalog_block">
+
+</div>
+</div>
+</div>
+
+<script type="module" src="js/moduleProduct.js">
+</script>
+<script>
+	async function loupeOnClick(idLoupe) {
+    let positionStoregaLoupe = await import('./js/component/menu.js');
+    positionStoregaLoupe.loupeOnClick(idLoupe);
+  }
+  async function basketOpen(){
+	let openCard = await import("./js/component/card.js")
+	openCard.basketOpen();
+		
+	}
+  async function toDoBasketOpen(productsFeatured){
+	let openCard = await import("./js/component/card.js")
+		
+	openCard.basketAdd(productsFeatured);
+	openCard.basketOpen();
+		
+	}
+	async function toDoBasketClose(){
+	let menu = await import("./js/component/menu.js")
+	let closeCard = await import("./js/component/card.js")
+	menu.checkingWhatColorMakesLogo(String(window.location.pathname));
+	closeCard.basketClose(); 
+	closeCard.checkLocalStorage();}
+	async function removeItemBasket(quantity){
+		let card = await import("./js/component/card.js")
+		card.removeItemBasket(quantity)
+		// card.sortThroughBasketProduct()
+
+	}
+	async function productPlus(quantity){
+		let card = await import("./js/component/card.js")
+		card.productPlus(quantity)
+		// card.sortThroughBasketProduct()
+
+	}
+	async function productMinus(quantity){
+		let card = await import("./js/component/card.js")
+		card.productMinus(quantity)
+		// card.sortThroughBasketProduct()
+	}
+	async function filterCompany(elemfilter){
+		let product = await import ("./js/component/product.js")
+		product.filterCompany(elemfilter)
+	}
+</script>
+</body>
+</html>
