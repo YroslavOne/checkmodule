@@ -14,7 +14,7 @@
 	<div id="basket_open" class=""></div>
 <div class="menu_display_flex" id="menu">
 </div>
-<div class="breadCrumbs" >
+<div class="breadCrumbs" >	
 <p id="breadCrumbs"></p>
 </div>
 <div id="cardItem" class="cardItem">
@@ -22,5 +22,42 @@
 
 <script type="module" src="js/module.js" defer>
 	</script>
+<script>
+	  async function basketOpen(){
+		let openCard = await import("./js/component/card.js")
+		openCard.basketOpen();
+			
+		}
+	  async function basketAdd(productsFeatured){
+		let openCard = await import("./js/component/card.js")
+			
+		openCard.basketAdd(productsFeatured);
+		openCard.basketOpen();
+			
+		}
+		async function toDoBasketClose(){
+		let menu = await import("./js/component/menu.js")
+		let closeCard = await import("./js/component/card.js")
+		menu.checkingWhatColorMakesLogo(String(window.location.pathname));
+		closeCard.basketClose(); 
+		closeCard.checkLocalStorage();}
+		async function removeItemBasket(quantity){
+			let card = await import("./js/component/card.js")
+			card.removeItemBasket(quantity)
+			// card.sortThroughBasketProduct()
+	
+		}
+		async function productPlus(quantity){
+			let card = await import("./js/component/card.js")
+			card.productPlus(quantity)
+			// card.sortThroughBasketProduct()
+	
+		}
+		async function productMinus(quantity){
+			let card = await import("./js/component/card.js")
+			card.productMinus(quantity)
+			// card.sortThroughBasketProduct()
+		}
+</script>
 </body>
 </html>
