@@ -17,6 +17,16 @@ export function arrayProduct(products) {
 function pageCheckForHome(productsFeatured) {
   if (productsFeatured.fields.featured === true) {
     variable.elemHtml = variable.elemHtml + elementAssembly(productsFeatured);
+    
   }
   variable.$idElemCatalogHtml.innerHTML = variable.elemHtml;
 }
+
+
+const keksfasdfdsdf = document.getElementById("prostochek")
+keksfasdfdsdf?.addEventListener("click",
+  function () {
+          alert("да бляяяяя");
+      }, 
+      false,
+  );
