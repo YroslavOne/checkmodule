@@ -17,7 +17,6 @@ h1 {
 .menu ul li {
 	list-style-type: none;
 	width: 30%;
-	/* text-align: end; */
 	color: #fff;
 	letter-spacing: 0.1rem;
 	transition: all 0.3s linear;
@@ -97,7 +96,6 @@ h1 {
 	display: flex;
 	align-items: center;
 	margin-top: -78px;
-	/* align-content: center; */
 	flex-direction: column;
 
 }
@@ -131,7 +129,6 @@ a {
 .text_main_block h2 {
 	font-size: 2.75rem;
 	margin: 1.5rem 0;
-	/* line-height: 1; */
 	letter-spacing: 0.1rem;
 	color: #fff;
 }
@@ -173,8 +170,6 @@ a {
 	max-width: 1170px;
 	width: 90vw;
 }
-
-.card_product_home {}
 
 .home_background_featured {
 	width: 100%;
@@ -321,8 +316,6 @@ a {
 .bi-cart4 {
 	display: flex;
 	cursor: pointer;
-
-	/* display: block; */
 	color: #fff;
 	font-weight: 800px;
 	font-size: 40px;
@@ -391,8 +384,6 @@ a {
 	gap: 1rem 2rem;
 	grid-template-columns: 1fr 1fr;
 }
-
-.img_product_cart_loupe {}
 
 .img_product_cart_loupe img {
 	height: 25rem;
@@ -530,10 +521,7 @@ a {
 	box-sizing: border-box;
 }
 
-filter_sidbar {}
-
 .sidebar {
-	/* display: block; */
 	position: sticky;
 	top: 1rem;
 	margin-right: 50px;
@@ -577,12 +565,10 @@ filter_sidbar {}
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	transition: all 0.3s linear;
-	/* transform: translateX(100%); */
 	overflow: scroll;
 	z-index: 1000;
 }
-.block_basket_product{
-}
+
 .display_flex_basket_product{
     margin: 1rem 0;
     display: grid;
