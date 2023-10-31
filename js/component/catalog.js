@@ -23,10 +23,3 @@ function pageCheckForHome(productsFeatured) {
 }
 
 
-const keksfasdfdsdf = document.getElementById("prostochek")
-keksfasdfdsdf?.addEventListener("click",
-  function () {
-          alert("да бляяяяя");
-      }, 
-      false,
-  );
