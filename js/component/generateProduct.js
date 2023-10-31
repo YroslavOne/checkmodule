@@ -25,20 +25,3 @@ import { product } from '../variable.js';
     resultValue = Number(maxValueStartTwoSymble + '.' + maxValueEndTwoSymble);
     return resultValue;
   }
-
-//   const keksfasdfdsdf = document.getElementById('prostochek')
-
-//   if (keksfasdfdsdf) {keksfasdfdsdf.addEventListener("click",
-//   function () {
-//           Console.log("да бляяяяя");
-//       }, 
-//       false,
-//   );}
-//   window.addEventListener("DOMContentLoaded", (event) => {
-//     const keksfasdfdsdf = document.getElementById('prostochek');
-//     if (keksfasdfdsdf) {
-//         keksfasdfdsdf.addEventListener('click', function () {
-//         Console.log("да бляяяяя");
-//     }, false);
-//     }
-// });
